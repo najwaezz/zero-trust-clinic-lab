@@ -1,0 +1,39 @@
+# Images disque de VM (trop lourds, inutiles)
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.vmx
+*.vmem
+*.vmsd
+*.vmss
+*.nvram
+*.lck
+*.iso
+
+# Secrets et donnees sensibles
+.env
+*.pem
+*.key
+*.crt
+*.pfx
+client.keys
+authd.pass
+secrets/
+credentials*
+*password*
+
+# Exports bruts (contiennent hashes, certificats, cles)
+config-*.xml
+config.xml
+realm-export-raw*.json
+
+# Captures reseau et logs bruts
+*.pcap
+*.pcapng
+*.log
+
+# OS / editeurs
+.DS_Store
+Thumbs.db
+.vscode/

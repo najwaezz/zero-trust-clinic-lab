@@ -1,0 +1,10 @@
+<!-- Règle personnalisée de laboratoire.
+     Reprend les alertes Suricata "LAB - Kali TCP traffic detected" reçues de pfSense par Syslog
+     et les remonte au niveau 8 dans Wazuh. -->
+<group name="local,suricata,ids,">
+  <rule id="100100" level="8">
+    <match>LAB - Kali TCP traffic detected</match>
+    <description>Suricata IDS: TCP scan from Kali detected against Windows Server</description>
+    <group>recon,attack,</group>
+  </rule>
+</group>
